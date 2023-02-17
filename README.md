@@ -10,7 +10,7 @@ $ ./drone_start.sh
 ```
 4. Once the container starts, you should be in directory
 ```
-$ /embed/catkin_ws $ 
+root@<random_stuff> /embed/catkin_ws $ 
 ```
 This is the catkin workspace where the ROS package builder, catkin, manages your source code, builds, and other stuff. 
 Run 
