@@ -10,19 +10,19 @@ MHackers Embedded 2023 Drone Project ROS Docker Images
 ```
 4. Once the container starts, you should be in directory
 ```
-/embed/catkin_ws
+/embed/catkin_ws $ 
 ```
 This is the catkin workspace where the ROS package builder, catkin, manages your source code, builds, and other stuff. 
 Run 
 ```
-catkin_init.sh
+$ catkin_init.sh
 ```
 to compile your code and source the workspace (something that is required by ROS to work)
 
 ## Update Image
 1. When there is a new version of the image available, run
 ```
-./drone_clean.sh
+$ ./drone_clean.sh
 ```
 and then start the dev container following step 3 in Usage.
 
@@ -31,17 +31,17 @@ and then start the dev container following step 3 in Usage.
 ## Build
 1. Head to the dev/ directory
 ```bash
-cd dev
+$ cd dev
 ```
 2. Change the tag in makec.sh (I don't know anything about shell this is the best I can do)
 3. Run
 ```
-./makec.sh
+$ ./makec.sh
 ```
 to build the container. 
 4. To push to Docker Hub, run
 ```
-docker push danielhouevr315/mhacker-drone-ros:<tag>
+$ docker push danielhouevr315/mhacker-drone-ros:<tag>
 ```
 
 ## Learn More About ROS Development
