@@ -36,3 +36,5 @@ sudo docker push danielhouevr315/mhacker-drone-ros:<tag>
 
 ## Learn More About ROS Development
 This stack is based on ROS noetic. 
+
+I recommend going through the first six of the [Official ROS Tutorials](http://wiki.ros.org/ROS/Tutorials) to get started with ROS development. 
