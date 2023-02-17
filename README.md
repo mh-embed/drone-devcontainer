@@ -29,7 +29,7 @@ cd dev
 to build the container. 
 4. To push to Docker Hub, run
 ```
-sudo docker push danielhouevr315/mhacker-drone-ros:<tag>
+docker push danielhouevr315/mhacker-drone-ros:<tag>
 ```
 
 ## Learn More About ROS Development
