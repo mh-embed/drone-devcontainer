@@ -8,13 +8,25 @@ MHackers Embedded 2023 Drone Project ROS Docker Images
 ```bash
 ./drone_start.sh
 ```
-4. When there is a new version of the image available, run
+4. Once the container starts, you should be in directory
+```
+/embed/catkin_ws
+```
+This is the catkin workspace where the ROS package builder, catkin, manages your source code, builds, and other stuff. 
+Run 
+```
+catkin_init.sh
+```
+to compile your code and source the workspace (something that is required by ROS to work)
+
+## Update Image
+1. When there is a new version of the image available, run
 ```
 ./drone_clean.sh
 ```
-and then start the dev container following step 3.
+and then start the dev container following step 3 in Usage.
 
-5. By default, ONLY data in /embed/ directory (inside the container) will be saved in a permanent volume in docker. Changes in other parts of the system will NOT be saved. If your program needs another package, email or @me on Slack and I will update the images within 24 hrs. Please follow step 3 and 4 to use updated images. 
+2. By default, ONLY data in /embed/ directory (inside the container) will be saved in a permanent volume in docker. Changes in other parts of the system will NOT be saved. If your program needs another package, email or @me on Slack and I will update the images within 24 hrs. Please follow step 3 and 4 to use updated images. 
 
 ## Build
 1. Head to the dev/ directory
