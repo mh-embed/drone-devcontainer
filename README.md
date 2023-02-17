@@ -6,11 +6,11 @@ MHackers Embedded 2023 Drone Project ROS Docker Images
 2. Get this Github Repo
 3. run docker
 ```bash
-./drone_start.sh
+$ ./drone_start.sh
 ```
 4. Once the container starts, you should be in directory
 ```
-/embed/catkin_ws $ 
+$ /embed/catkin_ws $ 
 ```
 This is the catkin workspace where the ROS package builder, catkin, manages your source code, builds, and other stuff. 
 Run 
