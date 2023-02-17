@@ -8,15 +8,13 @@ MHackers Embedded 2023 Drone Project ROS Docker Images
 ```bash
 ./drone_start.sh
 ```
-
-### For New Docker Users (If you've used docker before, ignore this)
 4. When there is a new version of the image available, run
 ```
 ./drone_clean.sh
 ```
 and then start the dev container following step 3.
 
-5. By default, ONLY data in /embed/ directory will be saved in a permanent volume in docker. Changes in other parts of the system will NOT be saved. If your program needs another package, email or @me on Slack and I will update the images within 24 hrs. Please follow step 3 and 4 to use updated images. 
+5. By default, ONLY data in /embed/ directory (inside the container) will be saved in a permanent volume in docker. Changes in other parts of the system will NOT be saved. If your program needs another package, email or @me on Slack and I will update the images within 24 hrs. Please follow step 3 and 4 to use updated images. 
 
 ## Build
 1. Head to the dev/ directory
