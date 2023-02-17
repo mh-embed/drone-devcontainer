@@ -27,6 +27,10 @@ $ ./drone_clean.sh
 and then start the dev container following step 3 in Usage.
 
 2. By default, ONLY data in /embed/ directory (inside the container) will be saved in a permanent volume in docker. Changes in other parts of the system will NOT be saved. If your program needs another package, email or @me on Slack and I will update the images within 24 hrs. Please follow step 3 and 4 to use updated images. 
+3. Different versions of the images are hosted in [my Dockerhub](https://hub.docker.com/repository/docker/danielhouevr315/mhacker-drone-ros/). You can manually pull different versions of the image by running
+```
+docker pull danielhouevr315/mhacker-drone-ros:<tag>
+```
 
 ## Build
 1. Head to the dev/ directory
