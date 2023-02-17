@@ -30,9 +30,9 @@ cd dev
 ```
 to build the container. 
 4. To push to Docker Hub, run
-```bash
+```
 sudo docker push danielhouevr315/mhacker-drone-ros:<tag>
-``
+```
 
 ## Learn More About ROS Development
 This stack is based on ROS noetic. 
