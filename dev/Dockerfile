@@ -9,9 +9,6 @@ RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sud
 RUN sudo apt-get install -y cmake python3-catkin-pkg python3-empy python3-nose libgtest-dev
 RUN sudo apt install -y ros-noetic-rosserial ros-noetic-catkin rospack-tools
 
-COPY ./scripts/ /embed-scripts
-RUN sudo chmod +x /embed-scripts/*
-
 RUN sudo mkdir /embed/
 
 # Moify the bashrc file

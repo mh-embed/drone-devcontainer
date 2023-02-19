@@ -22,7 +22,7 @@ to compile your code and source the workspace (something that is required by ROS
 ## Update Image
 1. When there is a new version of the image available, run
 ```
-$ ./drone_clean.sh
+$ sudo docker rm drone-ros
 ```
 and then start the dev container following step 3 in Usage.
 
@@ -38,11 +38,15 @@ $ docker pull danielhouevr315/mhacker-drone-ros:<tag>
 $ cd dev
 ```
 2. Change the tag in makec.sh (I don't know anything about shell this is the best I can do)
-3. Run
+3. To build image for your host platform, run
 ```
-$ ./makec.sh
+$ sudo docker buildx build . -t danielhouevr315/mhacker-drone-ros:<tag>
 ```
-to build the container. 
+To build for Raspberry Pi, run
+```
+$ sudo docker buildx build . --platform linux/arm64/v8 -t danielhouevr315/mhacker-drone-ros:<tag>
+```
+
 4. To push to Docker Hub, run
 ```
 $ docker push danielhouevr315/mhacker-drone-ros:<tag>
