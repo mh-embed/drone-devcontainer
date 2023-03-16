@@ -35,7 +35,6 @@ RUN apt install -y \
     && apt autoremove -y \
     && apt clean -y
 
-
 # Set bashrc to ROS default
 RUN echo 'source /opt/ros/noetic/setup.bash' >> ~root/.bashrc
 
