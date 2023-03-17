@@ -38,6 +38,10 @@ RUN apt install -y \
 # Set bashrc to ROS default
 RUN echo 'source /opt/ros/noetic/setup.bash' >> ~root/.bashrc
 
+# Sym link python path for convenience
+RUN ln -s /usr/bin/python3 /usr/bin/python \
+    && ln -s /usr/bin/pip3 /usr/bin/pip
+
 # Set generic startup params, but these should get overridden by VS Code
 WORKDIR /embed
 CMD ["/bin/bash", "-c"]
