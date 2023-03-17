@@ -9,7 +9,7 @@ If you haven't heard of devcontainers, fret not!
 They are very easy to use!
 Just install [VS Code](https://code.visualstudio.com/Download), install the [```ms-vscode-remote.remote-containers```](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension, and install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-Copy the ```devcontainer/``` folder into your repo as ```.devcontainer.json``` (note the dot), and let VS Code do the rest!
+Copy the ```devcontainer/``` folder into your repo as ```.devcontainer/``` (note the dot), and let VS Code do the rest!
 
 ## Building
 
